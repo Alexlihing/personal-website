@@ -1,0 +1,84 @@
+{
+    "skills": [
+        {
+            "id": "1",
+            "src": "./img/product-chain-1.png",
+            "title": "Front-End",
+            "description": "lorem ipsum dolor sit amet"
+        },
+
+        {
+            "id": "2",
+            "src": "./img/tag-1.png",
+            "title": "Back-End",
+            "description": "lorem ipsum dolor sit amet"
+        },
+
+        {
+            "id": "3",
+            "src": "./img/feather-pen-2.png",
+            "title": "Front-End",
+            "description": "lorem ipsum dolor sit amet"
+        },
+
+        {
+            "id": "4",
+            "src": "./img/feather-pen-1.png",
+            "title": "Webflow Development",
+            "description": "lorem ipsum dolor sit amet"
+        }
+    ],
+    "portfolio": [
+        {
+            "id": "1",
+            "src": "./img/placeholder-image.png",
+            "title": "Ahuse",
+            "description": "lorem ipsum dolor sit amet",
+            "link": "View In GitHub"
+        },
+
+        {
+            "id": "2",
+            "src": "./img/placeholder-image-1.png",
+            "title": "App Dashbaord",
+            "description": "lorem ipsum dolor sit amet",
+            "link": "View In GitHub"
+        },
+
+        {
+            "id": "3",
+            "src": "./img/placeholder-image-2.png",
+            "title": "Easy Rent",
+            "description": "lorem ipsum dolor sit amet",
+            "link": "View In GitHub"
+        }
+    ],
+    "testimonial": [
+        {
+            "id": "1",
+            "count": "5",
+            "src": "./img/avatar-image.png",
+            "description": "lorem ipsum dolor sit amet",
+            "author_name": "Author 1",
+            "author_designation": "Starbucks"
+        },
+
+        {
+            "id": "2",
+            "count": "5",
+            "src": "./img/avatar-image-1.png",
+            "description": "lorem ipsum dolor sit amet",
+            "author_name": "Author 2",
+            "author_designation": "Louis Vuitton"
+        },
+
+        {
+            "id": "3",
+            "count": "5",
+            "src": "./img/avatar-image-2.png",
+            "description": "lorem ipsum dolor sit amet",
+            "author_name": "Author 3",
+            "author_designation": "McDonald's"
+        }
+    ]
+}
