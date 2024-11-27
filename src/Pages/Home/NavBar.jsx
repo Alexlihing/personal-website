@@ -2,23 +2,23 @@ import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
 function NavBar() {
-    const [navActive, setNavActive] = useState(false);
+    const [navActive, setNavActive] = useState(false); /* tracks whether nav menu is open or not open */
 
     const toggleNav = () => {
-        setNavActive(!navActive);
+        setNavActive(!navActive); /* toggles nav active state when icon is clicked */
     };
 
     const closeMenu = () => {
-        setNavActive(false);
+        setNavActive(false); /* closes menu/sets to false when menu item is clicked or if screen size is changed */
     };
 
-    useEffect(() => {
+    useEffect(() => { /* closes menu when screen width is smaller than 500px */
         const handleResize = () => {
             if (window.innerWidth <= 500) {
                 closeMenu();
             }
         };
-        window.addEventListener("resize", handleResize);
+        window.addEventListener("resize", handleResize); /* adds resize listener */
 
         return () => {
             window.removeEventListener("resize", handleResize);
@@ -47,7 +47,7 @@ function NavBar() {
             <div className={`navbar--items ${navActive ? "active" : ""}`}>
                 <ul>
                     <li>
-                        <Link
+                        <Link /* other menu items */
                             onClick={closeMenu}
                             activeClass="navbar--active-content"
                             spy={true}
@@ -104,7 +104,7 @@ function NavBar() {
                     </li>
                 </ul>
             </div>
-            <Link
+            <Link /* contact button */
                 onClick={closeMenu}
                 activeClass="navbar--active-content"
                 spy={true}
