@@ -2,6 +2,7 @@ import data from "../../data/index.json";
 
 export default function MyPortfolio() {
   return (
+    /* temporary placeholders, will be implemented later */
     <section className="portfolio--section" id="MyPortfolio">
       <div className="portfolio--container-box">
         <div className="portfolio--container">
