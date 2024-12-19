@@ -3,7 +3,6 @@ import MySkills from "../MySkills";
 import MyPortfolio from "../MyPortfolio";
 import Testimonial from "../Testimonials";
 import ContactMe from "../ContactMe";
-    
 export default function Home () {
     return (
         <>
