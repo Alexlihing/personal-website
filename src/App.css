@@ -18,6 +18,11 @@ p {
   margin: 0;
 }
 
+#skill-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
 :root {
   --primary: #5e3bee;
   --heading-color: #282938;
@@ -49,7 +54,6 @@ p {
   -moz-transition: background-color 0.5s;
   -ms-transition: background-color 0.5s;
   -o-transition: background-color 0.5s;
-  
 }
 
 .btn-outline-primary {
@@ -109,6 +113,12 @@ h2 {
   line-height: 58px;
 }
 
+/*
+  NOTE: There's a duplicate "h1" below labeled as "Heading 3".
+  Probably a mistake in the original code. Keeping as-is, but 
+  you might want to rename it to "h3" if it's intended for heading 3.
+*/
+
 /*Heading 3*/
 h1 {
   font-size: 24px;
@@ -145,7 +155,7 @@ h1 {
 }
 
 /* section titles */
-/* skills & About me */ 
+/* skills & About me */
 
 .section-title {
   color: var(--heading-color);
@@ -166,8 +176,6 @@ h1 {
   font-weight: 600;
   line-height: 24px;
 }
-
-/* section titles ends */
 
 /* Navbar style start */
 .navbar {
@@ -210,7 +218,7 @@ h1 {
 .navbar--active-content {
   color: var(--primary);
 }
-/* navbar styler ends */
+/* navbar style ends */
 
 /* hero section style */
 
@@ -286,132 +294,98 @@ h1 {
   background-color: #f9f9f9;
 }
 
+.section--title {
+  /* already defined above; just reaffirming here if needed */
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
 .skills--section--heading {
   font-size: 2rem;
   font-weight: bold;
   color: #333;
-}
-
-.skills--section--container {
-  display: flex;
-  grid-template-columns: repeat(3, 1fr);
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px; /* Space between cards */
-}
-
-.skills--section--card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between; /* elements space evenly */
-  width: 100%; 
-  max-width: 580px; 
-  height: 300px; 
-  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
-  border-radius: 20px; /* Rounded corners for a modern look */
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Subtle shadow */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.skills--section--card:hover {
-  transform: translateY(-10px); /* Lift effect on hover */
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
-}
-
-.skills--section--img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 150px; /* Logo size */
-  height: 150px; /* Logo size */
-  margin: auto; /* Center it in the card */
-}
-
-
-.skills--section--img img {
-  width: 240px; /* Fit image to the container */
-  height: 240px;
-  object-fit: contain; /* Maintain aspect ratio */
-}
-
-.skills--section--title {
-  font-size: 28px; /* Larger font for title */
-  font-weight: bold;
   text-align: center;
-  color: var(--heading-color);
-  margin-top: 15px;
 }
 
-/* Responsiveness for smaller screens */
-@media screen and (max-width: 1200px) {
+/* 
+  Old card-based container & card styles are removed/commented out.
+  We'll replace with "shapes" for each skill.
+  
   .skills--section--container {
-    grid-template-columns: repeat(2, 1fr); 
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .skills--section--container {
-    grid-template-columns: 1fr; 
+    ...
   }
   .skills--section--card {
-    max-width: 90%; 
-    height: 450px; 
+    ...
+  }
+  etc.
+*/
+
+/* New "shape" container & shape items */
+
+.skills--shape--container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem; 
+}
+
+.skill-shape {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Example polygon to get a “rocky gem” shape */
+  clip-path: polygon(
+    50% 0%,
+    90% 25%,
+    100% 60%,
+    75% 100%,
+    25% 100%,
+    0% 60%,
+    10% 25%
+  );
+  background: linear-gradient(
+    135deg,
+    #444, 
+    #666
+  );
+  animation: float 3s ease-in-out infinite;
+}
+
+.skill-shape::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* subtle shading to mimic “stone” or “gem” look */
+  background: radial-gradient(
+    circle at 40% 40%, 
+    rgba(255,255,255,0.1), 
+    rgba(0,0,0,0.3)
+  );
+  mix-blend-mode: multiply;
+}
+
+.skill-shape img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
-
-.skills--section--card--content {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end; 
-  width: 100%;
-}
-
-.skills--section--img img[src="./img/html_logo.png"] {
-  width: 180px; 
-  height: 180px; 
-}
-
-.skills--section--img img[src="./img/css_logo.png"] {
-  width: 180px; 
-  height: 180px; 
-}
-
-.skills--section--img img[src="./img/JavaScript-logo.png"] {
-  width: 300px; 
-  height: 300px; 
-}
-
-.skills--section--img img[src="./img/react-logo.png"] {
-  width: 300px;
-  height: 300px;
-}
-
-.skills--section--img img[src="./img/intellij-logo.jpg"] {
-  width: 140px;
-  height: 140px;
-}
-
-.skills--section--title {
-  font-size: 28px;
-  font-weight: bold;
-  text-align: center;
-  color: var(--heading-color);
-  margin: 10px; 
-  padding-top: 10px; 
-}
-
-.skills--section--description {
-  color: var(--black);
-  font-size: 21.3px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 32px;
-}
-
-/* Skills style ends */
 
 /* About Me */
 
@@ -431,6 +405,7 @@ h1 {
 /* About us ends */
 
 /* My Portfolio starts here */
+
 .portfolio--section {
   display: flex;
   padding: 112px 85px;
@@ -562,6 +537,8 @@ h1 {
 }
 
 /* Testimonials end */
+
+/* Contact Me */
 .contact--section {
   display: flex;
   padding: 150px 85px;
@@ -612,9 +589,9 @@ select {
   -moz-appearance: none;
   appearance: none;
   /* Some browsers will not display the caret when using calc, so we put the fallback first */
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.5303 21.2052C16.2374 21.4981 15.7626 21.4981 15.4697 21.2052L7.82318 13.5587C7.53029 13.2658 7.53029 12.791 7.82318 12.4981L8.17674 12.1445C8.46963 11.8516 8.9445 11.8516 9.2374 12.1445L16 18.9071L22.7626 12.1445C23.0555 11.8516 23.5303 11.8516 23.8232 12.1445L24.1768 12.4981C24.4697 12.791 24.4697 13.2658 24.1768 13.5587L16.5303 21.2052Z" fill="%23033333"/></svg>')
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.5303 21.2052C16.2374 21.4981 15.7626 21.4981 15.4697 21.2052L7.82318 13.5587C7.53029 13.2658 7.53029 12.791 7.82318 12.4981L8.17674 12.1445C8.46963 11.8516 8.9445 11.8516 9.2374 12.1445L16 18.9071L22.7626 12.1445C23.0555 11.8516 23.5303 11.8516 23.8232 12.1445L24.1768 12.4981C24.4697 12.791 24.4697 13.2658 24.1768 13.5587L16.5303 21.2052Z" fill="%23033333"/></svg>') 
     white no-repeat 98.5% !important; /* !important used for overriding all other customisations */
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.5303 21.2052C16.2374 21.4981 15.7626 21.4981 15.4697 21.2052L7.82318 13.5587C7.53029 13.2658 7.53029 12.791 7.82318 12.4981L8.17674 12.1445C8.46963 11.8516 8.9445 11.8516 9.2374 12.1445L16 18.9071L22.7626 12.1445C23.0555 11.8516 23.5303 11.8516 23.8232 12.1445L24.1768 12.4981C24.4697 12.791 24.4697 13.2658 24.1768 13.5587L16.5303 21.2052Z" fill="%23033333"/></svg>')
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.5303 21.2052C16.2374 21.4981 15.7626 21.4981 15.4697 21.2052L7.82318 13.5587C7.53029 13.2658 7.53029 12.791 7.82318 12.4981L8.17674 12.1445C8.46963 11.8516 8.9445 11.8516 9.2374 12.1445L16 18.9071L22.7626 12.1445C23.0555 11.8516 23.5303 11.8516 23.8232 12.1445L24.1768 12.4981C24.4697 12.791 24.4697 13.2658 24.1768 13.5587L16.5303 21.2052Z" fill="%23033333"/></svg>') 
     white no-repeat calc(100% - 20px); /* Better placement regardless of input width */
 }
 /*For IE*/
@@ -712,39 +689,16 @@ input[type="chehckbox"] {
     font-size: 54px;
     line-height: 70px;
   }
-  .skills--section--container {
+  .skills--shape--container {
     gap: 16px;
   }
-  
-  .skills--section--card:hover {
-    transform: translateY(-5px); /* Slight lift on hover */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  .skill-shape {
+    width: 70px;
+    height: 70px;
   }
-  
-  .skills--section--img img {
-    width: 100px; /* Set a fixed size for the logo */
-    height: 100px;
-    object-fit: contain; /* Maintain aspect ratio of the image */
-    margin-bottom: 10px; /* Space between image and content */
-  }
-  
-  .skills--section--title {
-    font-size: 16px; /* Adjust the font size */
-    font-weight: bold;
-    color: var(--heading-color);
-    text-align: center;
-  }
-  
-  .skills--section--card--content {
-    gap: 20px;
-  }
-  .skills--section--title {
-    font-size: 23px;
-    line-height: 30px;
-  }
-  .skills--section--description {
-    font-size: 17.333px;
-    line-height: 27px;
+
+  .skill-shape img {
+    width: 55%;
   }
 }
 
@@ -762,7 +716,6 @@ input[type="chehckbox"] {
   .footer--content {
     text-align: center;
   }
-  .skills--section--container,
   .about--section,
   .portfolio--section--container,
   .portfolio--container-box,
@@ -804,10 +757,10 @@ input[type="chehckbox"] {
   }
 
   .testimonial--section--date {
-  margin-top: 0;
-  margin-bottom: 16px; 
-  font-size: 0.9rem; 
-  color: #555; 
+    margin-top: 0;
+    margin-bottom: 16px; 
+    font-size: 0.9rem; 
+    color: #555; 
   }
 
   .hero--section--title,
@@ -840,6 +793,19 @@ input[type="chehckbox"] {
 }
 
 /* Hamburger menu  */
+
+.nav__hamburger {
+  display: none;
+  width: 1.875rem;
+  height: 1.313rem;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.nav__hamburger
 
 .nav__hamburger {
   display: none;
