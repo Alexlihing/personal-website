@@ -34,7 +34,8 @@ function NavBar() {
     return (
         <nav className={`navbar ${navActive ? "active" : ""}`}>
             <div>
-                <h1>Alex Li </h1>
+                <h1>Alex Li</h1>
+                <h4>Full Stack Software Engineer</h4>
             </div>
             <a
                 className={`nav__hamburger ${navActive ? "active" : ""}`}
@@ -100,6 +101,20 @@ function NavBar() {
                             className="navbar--content"
                         >
                             Experience
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            onClick={closeMenu}
+                            activeClass="navbar--active-content"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                            to="Projects"
+                            className="navbar--content"
+                        >
+                            Projects
                         </Link>
                     </li>
                 </ul>

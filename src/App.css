@@ -324,21 +324,22 @@ h1 {
 /* New "shape" container & shape items */
 
 .skills--shape--container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  justify-items: center;
+  align-items: center; 
   gap: 1.5rem;
-  margin-top: 2rem; 
 }
 
 .skill-shape {
+  margin-bottom: 35px;
   width: 80px;
   height: 80px;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* Example polygon to get a “rocky gem” shape */
   clip-path: polygon(
     50% 0%,
     90% 25%,
@@ -690,6 +691,10 @@ input[type="chehckbox"] {
     line-height: 70px;
   }
   .skills--shape--container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    justify-items: center;
+    align-items: center; 
     gap: 16px;
   }
   .skill-shape {
@@ -793,19 +798,6 @@ input[type="chehckbox"] {
 }
 
 /* Hamburger menu  */
-
-.nav__hamburger {
-  display: none;
-  width: 1.875rem;
-  height: 1.313rem;
-  flex-direction: column;
-  justify-content: space-around;
-  position: absolute;
-  top: 25px;
-  right: 25px;
-}
-
-.nav__hamburger
 
 .nav__hamburger {
   display: none;

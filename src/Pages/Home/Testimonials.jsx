@@ -3,18 +3,6 @@ export default function Testimonial() {
 
   const testimonials = [
     {
-      title: "MealsMatter",
-      company: (
-        <a href="https://github.com/Alexlihing/meals-matter" target="_blank" rel="noopener noreferrer">
-          Project
-        </a>
-      ),
-      content:
-        "MealsMatter is a platform dedicated to reducing food waste in local communities. By utilizing the Geolocation and Google Maps APIs, it connects food distributors, such as food courts, restaurants, and grocery stores, with local homeless shelters and less-fortunate individuals who could make use of food that would otherwise be thrown out.",
-      date: "Oct 2024",
-      image: "./img/realLogo.webp",
-    },
-    {
       title: "Program Director",
       company: "Machine Learning @ Purdue",
       content:
@@ -85,7 +73,7 @@ export default function Testimonial() {
     <section className="testimonial--section" id="testimonial">
       <div className="portfolio--container-box">
         <div className="portfolio--container">
-          <h2 className="sections--heading">Experience</h2>
+          <h2 className="sections--heading">Projects</h2>
         </div>
       </div>
       <div className="portfolio--section--container">
