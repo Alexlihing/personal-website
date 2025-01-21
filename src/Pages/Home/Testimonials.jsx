@@ -71,9 +71,14 @@ export default function Testimonial() {
 
   return (
     <section className="testimonial--section" id="testimonial">
-      <div className="portfolio--container-box">
-        <div className="portfolio--container">
-          <h2 className="sections--heading">Projects</h2>
+  <div className="portfolio--container-box" style={{ width: '100%', textAlign: 'center' }}>
+    <div className="portfolio--container">
+      <h2 
+        id="experience-title" 
+        className="sections--heading"
+      >
+        Experience
+      </h2>
         </div>
       </div>
       <div className="portfolio--section--container">

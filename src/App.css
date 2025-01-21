@@ -416,9 +416,7 @@ h1 {
 }
 
 .portfolio--container-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: centetr;
+  align-items: center;
   width: 100%;
 }
 
