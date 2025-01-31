@@ -27,16 +27,16 @@ export default function Projects() {
       image: "./img/mealsmatter.png",
     },
     {
-        title: "Simon Says",
+        title: "HackDocs",
         company: (
-          <a href="https://github.com/Alexlihing/simon-says" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/Alexlihing/hackDocs" target="_blank" rel="noopener noreferrer">
             Link
           </a>
         ),
         content:
-          "Simon says challenges the user to replicate a specific pattern. Using jQuery and JavaScript, the game randomizes a square to choose. Squares that are part of the pattern light up and play an audio queue that matches each square.",
-        date: "2024",
-        image: "./img/simon-says.png",
+          "HackDocs is a centralized website that provides an accessible way for users to find answers to health-related questions, or get in touch with a medical professional. HackDocs uses FDA's Drug API to track necessary information on medicines, and OpenAI's API to provide tailored responses to user input.",
+        date: "2025",
+        image: "./img/hackdocs.png",
       },
   ];
 

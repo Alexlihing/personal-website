@@ -1,22 +1,30 @@
-import "../../App.css"
-export default function Testimonial() {
+import "../../App.css";
 
+export default function Testimonial() {
   const testimonials = [
+    {
+      title: "Software Consultant",
+      company: "Purdue Solutions Consulting",
+      content:
+        "Accepted out of 323 applicants (3.71% acceptance rate). This semester, I will be working with a team of 6, developing an app for T-Mobile to streamilne operations.",
+      date: "Jan 2025 - Present",
+      image: "./img/ps-logo.png",
+    },
+    {
+      title: "Research Assistant",
+      company: "Purdue University",
+      content:
+        "Web scraping Google Scholars and refining techniques to achieve near 100% accuracy. Currently advised by PhD student Christos Boutsikas. Part of Purdue's Data Mine Program during Fall and Spring semesters, analyzing 15+ data sets using Python, R, and SQL to improve data literacy. ",
+      date: "Aug 2024 - Present",
+      image: "./img/purdue-logo.png",
+    },
     {
       title: "Program Director",
       company: "Machine Learning @ Purdue",
       content:
-        "Founder and director of the Machine Learning @ Purdue Accelerator Program, with the primary focus to bridge the gap between students who are seeking to develop foundational Machine Learning skills, and the lack of opportunities available to them at Purdue. Responsible for developing teaching layout plan and content and recruiting professors and post-graduate students to mentor students with a hands-on project.",
+        "Founder and director of the Machine Learning @ Purdue Accelerator Program, with the primary focus to bridge the gap between students who are seeking to develop foundational Machine Learning skills, and the lack of opportunities available. Developed teaching content plan and recruited post-graduate students to mentor students with a hands-on project.",
       date: "Oct 2024 - Present",
       image: "./img/mlp-logo.png",
-    },
-    {
-      title: "Undergraduate Data Science Researcher",
-      company: "Purdue University - The Data Mine",
-      content:
-        "Responsible for analyzing data sets in R, SQL, and Python to extract information and enhance data-driven decision making. Next year, I will be partnering with a corporate company (TBD) to develop data-analysis tools.",
-      date: "Aug 2024 - Present",
-      image: "./img/purdue-logo.png",
     },
     {
       title: "Consultant",
@@ -45,7 +53,7 @@ export default function Testimonial() {
   ];
 
   const headerStyle = {
-    marginBottom: "0px", // Very small space after header
+    marginBottom: "0px",
   };
 
   const companyStyle = {
@@ -56,8 +64,8 @@ export default function Testimonial() {
   };
 
   const dateStyle = {
-    marginTop: "0", // No space above date
-    marginBottom: "4px", // Minimal space before content
+    marginTop: "0",
+    marginBottom: "4px",
     fontSize: "0.9rem",
     color: "#555",
   };
@@ -71,37 +79,41 @@ export default function Testimonial() {
 
   return (
     <section className="testimonial--section" id="testimonial">
-  <div className="portfolio--container-box" style={{ width: '100%', textAlign: 'center' }}>
-    <div className="portfolio--container">
-      <h2 
-        id="experience-title" 
-        className="sections--heading"
-      >
-        Experience
-      </h2>
+      <div className="portfolio--container-box" style={{ width: "100%", textAlign: "center" }}>
+        <div className="portfolio--container">
+          <h2 id="experience-title" className="sections--heading">
+            Experience
+          </h2>
         </div>
       </div>
       <div className="portfolio--section--container">
-        {testimonials.map((testimonial, index) => (
-          <div key={index} className="testimonial--section--card">
-            <img
-              src={testimonial.image}
-              alt={testimonial.title}
-              style={imageStyle}
-              className="testimonial--section--image"
-            />
-            <h3 style={headerStyle} className="testimonial--section--header">
-              {testimonial.title}
-            </h3>
-            <p style={companyStyle} className="testimonial--section--company">
-              {testimonial.company}
-            </p>
-            <h4 style={dateStyle} className="testimonial--section--date">
-              {testimonial.date}
-            </h4>
-            <p className="text-md">{testimonial.content}</p>
-          </div>
-        ))}
+        {testimonials.map((testimonial, index) => {
+          const customImageStyle =
+            testimonial.image === "./img/ps-logo.png"
+              ? { ...imageStyle, height: "315px", width: "200px", display: "block", margin: "0 auto" }
+              : imageStyle;
+
+          return (
+            <div key={index} className="testimonial--section--card">
+              <img
+                src={testimonial.image}
+                alt={testimonial.title}
+                style={customImageStyle}
+                className="testimonial--section--image"
+              />
+              <h3 style={headerStyle} className="testimonial--section--header">
+                {testimonial.title}
+              </h3>
+              <p style={companyStyle} className="testimonial--section--company">
+                {testimonial.company}
+              </p>
+              <h4 style={dateStyle} className="testimonial--section--date">
+                {testimonial.date}
+              </h4>
+              <p className="text-md">{testimonial.content}</p>
+            </div>
+          );
+        })}
       </div>
     </section>
   );
