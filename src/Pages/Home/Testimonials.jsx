@@ -6,7 +6,7 @@ export default function Testimonial() {
       title: "Software Consultant",
       company: "Purdue Solutions Consulting",
       content:
-        "Accepted out of 323 applicants (3.71% acceptance rate). This semester, I will be working with a team of 6, developing an app for T-Mobile to streamilne operations.",
+        "Accepted in Solutions' most competitive Spring class. This semester, I will be working with a team of 6, developing an app for T-Mobile to streamilne operations.",
       date: "Jan 2025 - Present",
       image: "./img/ps-logo.png",
     },
