@@ -13,9 +13,9 @@ export default function MySkills() {
         { name: "Node.js", logo: "./img/nodejs-logo.png"},
         { name: "jQuery", logo: "./img/jquery-logo.webp"},
         { name: "Firebase", logo: "./img/firebase-logo.png" },
+        { name: "MongoDB", logo: "./img/mongodb-logo.webp"},
         { name: "PostgreSQL", logo: "./img/postgresql-logo.webp"},
         { name: "MySQL", logo: "./img/mysql-logo.png"},
-        { name: "IntelliJ Idea", logo: "./img/intellij-logo.jpg"},
     ];
 
     return (
