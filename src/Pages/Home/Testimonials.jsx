@@ -3,20 +3,20 @@ import "../../App.css";
 export default function Testimonial() {
   const testimonials = [
     {
-      title: "Software Consultant",
-      company: "Purdue Solutions Consulting",
-      content:
-        "Accepted in Solutions' most competitive Spring class. This semester, I will be working with a team of 6, developing an app for T-Mobile to streamilne operations.",
-      date: "Jan 2025 - Present",
-      image: "./img/ps-logo.png",
-    },
-    {
       title: "Research Assistant",
       company: "Purdue University",
       content:
         "Web scraping Google Scholars and refining techniques to achieve near 100% accuracy. Currently advised by PhD student Christos Boutsikas. Part of Purdue's Data Mine Program during Fall and Spring semesters, analyzing 15+ data sets using Python, R, and SQL to improve data literacy. ",
       date: "Aug 2024 - Present",
       image: "./img/purdue-logo.png",
+    },
+    {
+      title: "Consultant",
+      company: "Purdue Solutions Consulting",
+      content:
+        "Accepted in Solutions' most competitive Spring class. Collboaring with a team of 6 to provide recommendations to expand customer base for CMF Panama, a bank. Conducting market research and analyzing data to identify potential customers. Developing a comprehensive marketing strategy to increase brand awareness and drive customer acquisition. Presenting findings and recommendations to CMF Panama's management team.",
+      date: "Jan 2025 - Present",
+      image: "./img/ps-logo.png",
     },
     {
       title: "Program Director",
