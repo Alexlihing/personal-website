@@ -15,16 +15,16 @@ export default function Projects() {
         image: "./img/boilerguess.png",
       },
     {
-      title: "MealsMatter",
+      title: "Functionary",
       company: (
         <a href="https://github.com/Alexlihing/meals-matter" target="_blank" rel="noopener noreferrer">
           Link
         </a>
       ),
       content:
-        "MealsMatter is a platform dedicated to reducing food waste in local communities. By utilizing the Geolocation and Google Maps APIs, it connects food distributors, such as food courts, restaurants, and grocery stores, with local homeless shelters and less-fortunate individuals who could make use of food that would otherwise be thrown out.",
+        "Functionary is an interactive tool that allows developers to analyze and visualize complex codebases with ease using the Web. Once a directory is uploaded from a user's file system, Functionary breaks down the codebase into an Abstract Syntax Tree, mapping function calls and dependencies on a dynamic graph with animated arrows to illustrate call flows. Functionary features an AI-powered chatbot through the OpenAI API that answers queries about the codebase, offering clear explanations of how each function operates. Functionary also uses Pinecone to integrate a vector database, using a RAG embedding model to provide relevant answers to user queries. The tech stack used was React, Typescript, Node.js, Express.js, MongoDB, and Pinecone.",
       date: "2024",
-      image: "./img/mealsmatter.png",
+      image: "./img/functionary.png",
     },
     {
         title: "HackDocs",
