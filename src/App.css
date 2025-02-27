@@ -867,3 +867,23 @@ input[type="chehckbox"] {
     transform: rotate(-45deg) translate(0.45rem, -0.1875rem);
   }
 }
+
+@media only screen and (max-width: 1024px) {
+  .skills--shape--container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .skills--shape--container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skill-shape {
+    width: 60px;
+    height: 60px;
+  }
+  .skill-shape img {
+    width: 45px;
+    height: 45px;
+  }
+}
