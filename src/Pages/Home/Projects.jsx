@@ -17,13 +17,13 @@ export default function Projects() {
     {
       title: "Functionary",
       company: (
-        <a href="https://github.com/Alexlihing/meals-matter" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/Alexlihing/functionary" target="_blank" rel="noopener noreferrer">
           Link
         </a>
       ),
       content:
         "Functionary is an interactive tool that allows developers to analyze and visualize complex codebases with ease using the Web. Once a directory is uploaded from a user's file system, Functionary breaks down the codebase into an Abstract Syntax Tree, mapping function calls and dependencies on a dynamic graph with animated arrows to illustrate call flows. Functionary features an AI-powered chatbot through the OpenAI API that answers queries about the codebase, offering clear explanations of how each function operates. Functionary also uses Pinecone to integrate a vector database, using a RAG embedding model to provide relevant answers to user queries. The tech stack used was React, Typescript, Node.js, Express.js, MongoDB, and Pinecone.",
-      date: "2024",
+      date: "2025",
       image: "./img/functionary-pic.png",
     },
     {
