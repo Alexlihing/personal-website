@@ -27,16 +27,16 @@ export default function Projects() {
       image: "./img/functionary-pic.png",
     },
     {
-        title: "HackDocs",
+        title: "Spectra",
         company: (
-          <a href="https://github.com/Alexlihing/hackDocs" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/Alexlihing/Spectra" target="_blank" rel="noopener noreferrer">
             Link
           </a>
         ),
         content:
-          "HackDocs is a centralized website that provides an accessible way for users to find answers to health-related questions, or get in touch with a medical professional. HackDocs uses FDA's Drug API to track necessary information on medicines, and OpenAI's API to provide tailored responses to user input.",
+          "Spectra is a next-generation computer vision platform that transforms video camera footage into proactive intelligence. Using fine-tuned Roboflow, Groq, and FAISS models, Spectra can detect a person collapsing in a crowd, panic-induced running or verbal cues for help, hazardous objects, and dense crowd formations that signal unrest. Spectra vectorizes each user's videos, labeling events as they occur when parsing the video, allowing for efficient searches through footage. Additionally, automated emails are sent to registered users when any of the urgent matters are detected. The tech stack used included React, Node.js, Express.js, Groq/Roboflow APIs, as well as Python for scripting.",
         date: "2025",
-        image: "./img/hackdocs.png",
+        image: "./img/spectra2.png",
       },
   ];
 

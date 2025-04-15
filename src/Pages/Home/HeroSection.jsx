@@ -12,7 +12,7 @@ export default function HeroSection() {
                     </p>
                 </div>
                 <a 
-    href="https://drive.google.com/file/d/1HYECsNqOd4DJYqVroD43z4kM6ChnrmIX/view?usp=sharing" 
+    href="https://drive.google.com/file/d/1N6aN546wMJttwjSg4otnYENnqeJM3fJm/view?usp=sharing" 
     className="btn btn-primary" 
     target="_blank" 
     rel="noopener noreferrer"
