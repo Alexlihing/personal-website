@@ -487,12 +487,13 @@ h1 {
 }
 
 .testimonial--section--image {
-  width: 150px; /* Set a fixed width */
-  height: 150px; /* Set a fixed height */
-  object-fit: contain; /* Maintain aspect ratio */
-  border-radius: 8px; /* Optional: rounded corners */
-  margin-bottom: 10px;
+  height: 100px;              /* Set your desired uniform height */
+  width: auto;                /* Width adjusts automatically */
+  object-fit: contain;        /* Keeps aspect ratio */
+  display: block;
+  margin: 0 auto;             /* Center the image horizontally */
 }
+
 
 .testimonial--section--card {
   display: flex;

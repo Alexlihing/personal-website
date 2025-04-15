@@ -6,9 +6,9 @@ export default function Testimonial() {
       title: "Incoming Software Development Engineer Intern",
       company: "Amazon",
       content:
-        "Working with the AWS Relatoinal Database Services Team - Summer 2025.",
-      date: "Aug 2024 - Present",
-      image: "./img/amazon-logo.png",
+        "Working with the AWS Relational Database Services Team - Summer 2025.",
+      date: "Mar 2025 - Present",
+      image: "./img/amazon-logo2.webp",
     },
     {
       title: "Research Assistant",
