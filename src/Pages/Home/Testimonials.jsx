@@ -3,6 +3,14 @@ import "../../App.css";
 export default function Testimonial() {
   const testimonials = [
     {
+      title: "Incoming Software Development Engineer Intern",
+      company: "Amazon",
+      content:
+        "Working with the AWS Relatoinal Database Services Team - Summer 2025.",
+      date: "Aug 2024 - Present",
+      image: "./img/amazon-logo.png",
+    },
+    {
       title: "Research Assistant",
       company: "Purdue University",
       content:
@@ -25,14 +33,6 @@ export default function Testimonial() {
         "Founder and director of the Machine Learning @ Purdue Accelerator Program, with the primary focus to bridge the gap between students who are seeking to develop foundational Machine Learning skills, and the lack of opportunities available. Developed teaching content plan and recruited post-graduate students to mentor students with a hands-on project.",
       date: "Oct 2024 - Present",
       image: "./img/mlp-logo.png",
-    },
-    {
-      title: "Consultant",
-      company: "Consult Your Community",
-      content:
-        "Partnered with Fruition Technologies, LLC, to develop a strategic plan for entering the Robotics market. Performed market research and completed a thorough financial analysis to determine pricing strategy and product composition. Developed a 6-month plan for implementation, including social media initiatives and events to facilitate brand growth.",
-      date: "Aug 2024 - Present",
-      image: "./img/cyc-logo.png",
     },
     {
       title: "Team Manager and Analyst",
