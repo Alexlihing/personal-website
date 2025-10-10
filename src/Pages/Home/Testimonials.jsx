@@ -12,7 +12,7 @@ export default function Testimonial() {
     },
     {
       title: "Research Assistant",
-      company: "Purdue University",
+      company: "Univesity of Pennsylvania",
       content: "Currently, I am researching serverless computing at the University of Pennsylvania, advised by PhD Student Spyros Pavlatos and Professor Vincent Liu. My current work focuses on designing and implementing a serverless etcd prototype using DynaomDB streams, ultimately reducing operational overhead in distributed storage systems.",      
       date: "Aug 2025 - Present",
       image: "./img/upenn_logo-3.png",
