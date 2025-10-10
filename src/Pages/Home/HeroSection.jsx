@@ -8,11 +8,11 @@ export default function HeroSection() {
                         <span className="hero--section-title--color">Overview</span> {" "}
                     </h1>
                     <p className="hero--section-description">
-                        Leader. Problem Solver. Innovator. Computer Science student at Purdue University. Experienced in analyzing problems and delivering efficient and effective solutions. Proficient in Java, C++, Python, SQL, Linux, JavaScript, HTML, CSS, and Git. Seeking opportunities to apply my technical skills and continue expanding my skillset.   
+                        Hi! I'm Alex, a Computer Science student at Purdue University. My interests lie primarily in Distributed Systems, Databases, and Machine Learning. I have a passion for creating software that will positively impact others. Currently, I'm researching Serverless Computing at the University of Pennsylvania, advised by Spyros Pavlatos and Vincent Liu. Here, you can find a little about me. If you'd like to chat, please feel free to reach out to me below!
                     </p>
                 </div>
                 <a 
-    href="https://drive.google.com/file/d/1N6aN546wMJttwjSg4otnYENnqeJM3fJm/view?usp=sharing" 
+    href="https://drive.google.com/file/d/14tBtqL9h6P7ELbDNG3-Qjjwe-wFY-IZ1/view?usp=drive_link" 
     className="btn btn-primary" 
     target="_blank" 
     rel="noopener noreferrer"

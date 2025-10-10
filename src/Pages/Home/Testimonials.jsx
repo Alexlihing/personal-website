@@ -3,26 +3,25 @@ import "../../App.css";
 export default function Testimonial() {
   const testimonials = [
     {
-      title: "Incoming Software Development Engineer Intern",
-      company: "Amazon",
+      title: "Software Development Engineer Intern",
+      company: "Amazon Web Services",
       content:
-        "Working with the AWS Relational Database Services Team - Summer 2025.",
-      date: "Mar 2025 - Present",
-      image: "./img/amazon-logo2.webp",
+        "During  my internship at Amazon Web Services, I worked under Redshift Vacuum, a cleanup feature for Amazon's cloud data warehouse service. My primary project involved developing new code generation logic for certain SQL operations to reduce fragmentation. I also worked on the internal calculations for fragmentation and sort benefit, directly providing these metrics to customers to show how Vacuum helped improve the overall state of their database.",
+      date: "May 2025 - Aug 2025",
+      image: "./img/aws-logo.jpg",
     },
     {
       title: "Research Assistant",
       company: "Purdue University",
-      content:
-        "Web scraping Google Scholars and refining techniques to achieve near 100% accuracy. Currently advised by PhD student Christos Boutsikas. Part of Purdue's Data Mine Program during Fall and Spring semesters, analyzing 15+ data sets using Python, R, and SQL to improve data literacy. ",
-      date: "Aug 2024 - Present",
-      image: "./img/purdue-logo.png",
+      content: "Currently, I am researching serverless computing at the University of Pennsylvania, advised by PhD Student Spyros Pavlatos and Professor Vincent Liu. My current work focuses on designing and implementing a serverless etcd prototype using DynaomDB streams, ultimately reducing operational overhead in distributed storage systems.",      
+      date: "Aug 2025 - Present",
+      image: "./img/upenn-logo.png",
     },
     {
       title: "Consultant",
       company: "Purdue Solutions Consulting",
       content:
-        "Accepted in Solutions' most competitive Spring class. Collboaring with a team of 6 to provide recommendations to expand customer base for CMF Panama, a bank. Conducting market research and analyzing data to identify potential customers. Developing a comprehensive marketing strategy to increase brand awareness and drive customer acquisition. Presenting findings and recommendations to CMF Panama's management team.",
+        "On campus, I am a consultant for Purdue Solutions Consulting. This semester, I'm working with a cybersecurity startup, focusing on Search Engine Optimization and Generative Engine Optimization. Last spring, I worked with CMF Panama, a financial instutition in Panama, developing a point of sale prototype, as well as providing strategic recommendations to enhance customer outreach.",
       date: "Jan 2025 - Present",
       image: "./img/ps-logo.png",
     },
