@@ -2,6 +2,14 @@ import "../../App.css";
 
 export default function Testimonial() {
   const testimonials = [
+      {
+      title: "Software Engineering Intern",
+      company: "Databricks",
+      content:
+        "Incoming Summer 2026 Summer Internship",
+      date: "Summer 2026",
+      image: "./img/databricks-logo2.png",
+    },
     {
       title: "Software Development Engineer Intern",
       company: "Amazon Web Services",
@@ -13,7 +21,7 @@ export default function Testimonial() {
     {
       title: "Research Assistant",
       company: "Univesity of Pennsylvania",
-      content: "Currently, I am researching serverless computing at the University of Pennsylvania, advised by PhD Student Spyros Pavlatos and Professor Vincent Liu. My current work focuses on designing and implementing a serverless etcd prototype using DynaomDB streams, ultimately reducing operational overhead in distributed storage systems.",      
+      content: "Currently, I am researching serverless computing at the University of Pennsylvania, advised by PhD Student Spyros Pavlatos and Professor Vincent Liu. My current work focuses on designing and implementing a serverless etcd prototype using DynaomDB streams, ultimately reducing operational overhead in distributed storage systems. We recently submitted a paper to a conference for publication.",      
       date: "Aug 2025 - Present",
       image: "./img/upenn_logo-3.png",
     },
@@ -21,7 +29,7 @@ export default function Testimonial() {
       title: "Consultant",
       company: "Purdue Solutions Consulting",
       content:
-        "On campus, I am a consultant for Purdue Solutions Consulting. This semester, I'm working with a cybersecurity startup, focusing on Search Engine Optimization and Generative Engine Optimization. Last spring, I worked with CMF Panama, a financial instutition in Panama, developing a point of sale prototype, as well as providing strategic recommendations to enhance customer outreach.",
+        "On campus, I am a consultant for Purdue Solutions Consulting. This semester, I'm working with a cybersecurity startup, focusing on Search Engine Optimization and Generative Engine Optimization. Last spring, I worked with CMF Panama, a financial instutition in Panama, developing a point of sale prototype, as well as providing technical recommendations to enhance customer outreach.",
       date: "Jan 2025 - Present",
       image: "./img/ps-logo.png",
     },
@@ -29,7 +37,7 @@ export default function Testimonial() {
       title: "Program Director",
       company: "Machine Learning @ Purdue",
       content:
-        "Founder and director of the Machine Learning @ Purdue Accelerator Program, with the primary focus to bridge the gap between students who are seeking to develop foundational Machine Learning skills, and the lack of opportunities available. Developed teaching content plan and recruited post-graduate students to mentor students with a hands-on project.",
+        "Founder and director of the Machine Learning @ Purdue Accelerator Program, with the primary focus to bridge the gap between students who are seeking to develop foundational Machine Learning skills, and the lack of opportunities available. Developed teaching content plan and recruited post-graduate students to mentor 80+ students with a hands-on project.",
       date: "Oct 2024 - Present",
       image: "./img/mlp-logo.png",
     },
@@ -40,14 +48,6 @@ export default function Testimonial() {
         "Improved team rank from #40 to #6 globally during my two year tenure. Responsible for all day-to-day operations, including scheduling practices, accommodating for any players' needs, and resolving conflicts that arose. Assisted team's development through recording games and extracting data to determine the team's strengths and weaknesses, adjusting our practice plan accordingly. Reported to Senior VP of Operations through weekly meetings to update on team's progress and suggest strategic improvements.",
       date: "Oct 2021 - Oct 2023",
       image: "./img/msf-logo.webp",
-    },
-    {
-      title: "Personal Finance Challenge National Finalist",
-      company: "National Personal Finance Challenge - Sponsored by Voya",
-      content:
-        "California State Champion and National Finalist in the Personal Finance Challenge. Demonstrated ability to grasp and communicate topics at a professional level through presenting full financial plans of fictitious case studies to panels of professional judges from Bank of America and Voya.",
-      date: "May 2024",
-      image: "./img/voya-logo.png",
     },
   ];
 
